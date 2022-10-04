@@ -1,13 +1,26 @@
 import React from 'react'
-import {Routes, Route} from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import Home from './Components/home'
+import { createTheme, ThemeProvider} from '@mui/material'
 
 const App = () => {
+  const theme = createTheme({
+    pallete:{
+      primary:{
+        main: '#ab47bc'
+      },
+      secondary:{
+        main: '#ea80fc'
+      }
+    }
+  }
+  )
   return (
   <>
-    <Navbar /> 
-    <Home />
+    <ThemeProvider theme={theme} >
+      <Navbar /> 
+      <Home />
+    </ThemeProvider>
   </>
   )
 }

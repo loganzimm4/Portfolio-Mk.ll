@@ -11,7 +11,9 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import JavascriptSharpIcon from '@mui/icons-material/JavascriptSharp';
+import CssSharpIcon from '@mui/icons-material/CssSharp';
+import HtmlSharpIcon from '@mui/icons-material/HtmlSharp';
 
 const Home = () => {
     
@@ -28,10 +30,8 @@ function Copyright() {
 
 const cards = [1, 2, 3];
 
-const theme = createTheme();
-
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <CssBaseline />
       <main>
         {/* Hero unit */}
@@ -53,10 +53,15 @@ const theme = createTheme();
             >
               Logan Zimmerman
             </Typography>
+            <Box sx={{alignItems:'center', justifyContent:'center', display:'flex'}}>
+                <CssSharpIcon sx={{fontSize:'100px'}}/>
+                <JavascriptSharpIcon sx={{fontSize:'100px'}}/>
+                <HtmlSharpIcon sx={{fontSize:'100px'}}/>
+            </Box>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               Full-stack Developer with experience in JS, HTML, CSS, React, Ruby on Rails, etc. 
               This site is a continuing work-in-progress as I learn and create more projects to be a small 
-              representation of my capabilities. Enjoy!
+              representation of my capabilities. Thanks for visiting!
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -64,8 +69,8 @@ const theme = createTheme();
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Main button</Button>
-              <Button variant="outlined">Secondary button</Button>
+              <Button variant="contained" color='secondary'>About Me</Button>
+              <Button variant="outlined" color='secondary'>Contact</Button>
             </Stack>
           </Container>
         </Box>
@@ -83,7 +88,7 @@ const theme = createTheme();
                       // 16:9
                       pt: '56.25%',
                     }}
-                    image="https://source.unsplash.com/random"
+                    image="https://cdn.worldvectorlogo.com/logos/react-1.svg"
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
@@ -95,8 +100,8 @@ const theme = createTheme();
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
+                    <Button size="small" color='secondary'>View</Button>
+                    <Button size="small" color='secondary'>Edit</Button>
                   </CardActions>
                 </Card>
               </Grid>
@@ -107,7 +112,7 @@ const theme = createTheme();
       {/* Footer */}
       <Box sx={{ bgcolor: '#424242', p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom sx={{color:'#ab47bc'}}>
-          Contact
+          Logan Zimmerman: Software Engineer
         </Typography>
         <Typography
           variant="subtitle1"
@@ -115,12 +120,12 @@ const theme = createTheme();
           color="text.secondary"
           component="p"
         >
-          loganzimm4@gmail.com
+          Something meaningful
         </Typography>
         <Copyright />
       </Box>
       {/* End footer */}
-    </ThemeProvider>
+      </>
   )
 };
 
