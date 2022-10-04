@@ -74,7 +74,7 @@ const cards = [1, 2, 3];
             </Stack>
           </Container>
         </Box>
-        <Container sx={{ py: 8, bgcolor:'#424242' }} maxWidth="md">
+        <Container sx={{ py: 8, bgcolor:'#424242' }}>
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
