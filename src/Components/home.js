@@ -70,7 +70,7 @@ const cards = [1, 2, 3];
               justifyContent="center"
             >
               <Button variant="contained" color='secondary'>About Me</Button>
-              <Button variant="outlined" color='secondary'>Contact</Button>
+              <Button variant="contained" color='secondary'>Contact</Button>
             </Stack>
           </Container>
         </Box>
