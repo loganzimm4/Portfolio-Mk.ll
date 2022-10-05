@@ -12,12 +12,15 @@ const App = () => {
       secondary:{
         main: '#ea80fc'
       },
-      Typography:{
-        fontFamily: ['Nunito']
-      }
+    },
+    typography:{
+        fontFamily: [
+          'Rubik',
+          'sans-serif'
+        ].join(',')
     }
-  }
-  )
+  });
+
   return (
   <>
     <ThemeProvider theme={theme} >
