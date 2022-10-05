@@ -29,7 +29,7 @@ const Home = () => {
             pb: 6,
           }}
         >
-          <Container maxWidth="sm">
+          <Container maxWidth="sm" sx={{paddingBottom: '100px'}}>
             <Typography
               component="h1"
               variant="h2"
@@ -60,10 +60,22 @@ const Home = () => {
             </Stack>
           </Container>
         </Box>
-        <Container sx={{ py: 8, bgcolor:'#424242' }}>
-          <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <Typography> Landing Info. and project pieces </Typography>
-          </Box>
+        <Container sx={{ py: 8, bgcolor:'#424242', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '100px'}}>
+            <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '20px'}}>
+                <CardContent>
+                    Project 1
+                </CardContent>
+            </Card>
+            <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '20px'}}>
+                <CardContent>
+                    Project 2
+                </CardContent>
+            </Card>
+            <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '20px'}}>
+                <CardContent>
+                    Project 3
+                </CardContent>
+            </Card>
         </Container>
       </main>
       {/* Footer */}
