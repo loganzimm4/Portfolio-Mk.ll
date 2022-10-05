@@ -11,6 +11,9 @@ const App = () => {
       },
       secondary:{
         main: '#ea80fc'
+      },
+      Typography:{
+        fontFamily: ['Nunito']
       }
     }
   }
