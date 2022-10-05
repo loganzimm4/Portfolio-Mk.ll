@@ -17,7 +17,7 @@ import HtmlSharpIcon from '@mui/icons-material/HtmlSharp';
 const Home = () => {
 
   return (
-    <>
+    <div sx={{bgcolor: '#424242', width: '100%', height: '100%'}}>
       <CssBaseline />
       <main>
         {/* Hero unit */}
@@ -60,23 +60,25 @@ const Home = () => {
             </Stack>
           </Container>
         </Box>
-        <Container sx={{ py: 8, bgcolor:'#424242', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '100px'}}>
-            <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '20px'}}>
-                <CardContent>
-                    Project 1
-                </CardContent>
-            </Card>
-            <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '20px'}}>
-                <CardContent>
-                    Project 2
-                </CardContent>
-            </Card>
-            <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '20px'}}>
-                <CardContent>
-                    Project 3
-                </CardContent>
-            </Card>
-        </Container>
+        <Box sx={{bgcolor: '#424242', width: '100%'}}>
+            <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '100px', paddingBottom: '100px'}}>
+                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '30px'}}>
+                    <CardContent>
+                        Project 1
+                    </CardContent>
+                </Card>
+                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '30px'}}>
+                    <CardContent>
+                        Project 2
+                    </CardContent>
+                </Card>
+                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '30px'}}>
+                    <CardContent>
+                        Project 3
+                    </CardContent>
+                </Card>
+            </Container>
+        </Box>
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: '#424242', p: 6 }} component="footer">
@@ -93,7 +95,7 @@ const Home = () => {
         </Typography>
       </Box>
       {/* End footer */}
-      </>
+      </div>
   )
 };
 
