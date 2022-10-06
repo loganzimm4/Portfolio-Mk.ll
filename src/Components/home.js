@@ -13,6 +13,10 @@ import Link from '@mui/material/Link';
 import JavascriptSharpIcon from '@mui/icons-material/JavascriptSharp';
 import CssSharpIcon from '@mui/icons-material/CssSharp';
 import HtmlSharpIcon from '@mui/icons-material/HtmlSharp';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+import reactLogo from './reactLogo.png'
 
 const Home = () => {
 
@@ -28,7 +32,8 @@ const Home = () => {
             pt: 8,
             pb: 6,
           }}
-        >
+        > 
+        
           <Container maxWidth="sm" sx={{paddingBottom: '100px'}}>
             <Typography
               component="h1"
@@ -60,6 +65,7 @@ const Home = () => {
             </Stack>
           </Container>
         </Box>
+        
         <Box sx={{bgcolor: '#424242', width: '100%'}}>
             <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '100px', paddingBottom: '100px'}}>
                 <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '30px'}}>
@@ -93,6 +99,11 @@ const Home = () => {
         >
           social links
         </Typography>
+        <Box sx={{alignItems:'center', justifyContent:'center', display:'flex'}}>
+                <Link href='https://www.linkedin.com/in/logan-zimmerman-developer/'> <LinkedInIcon sx={{margin: '25px', color:'#ab47bc'}} cursor='pointer'/> </Link>
+                <Link href='https://github.com/loganzimm4'><GitHubIcon sx={{margin: '25px', color:'#ab47bc'}} cursor='pointer'/></Link>
+                <Link><EmailIcon sx={{margin: '25px', color:'#ab47bc'}} cursor='pointer'/></Link>
+            </Box>
       </Box>
       {/* End footer */}
       </div>
