@@ -33,7 +33,7 @@ const Home = () => {
           }}
         > 
         
-          <Container maxWidth="sm" sx={{paddingBottom: '100px'}}>
+          <Container maxWidth="md" sx={{paddingBottom: '50px', paddingTop:'50px', bgcolor: '#212121'}}>
             <Typography
               component="h1"
               variant="h2"
@@ -44,16 +44,16 @@ const Home = () => {
               Logan Zimmerman
             </Typography>
             
-            <Typography variant="h5" align="center" color="text.secondary" paragraph>
+            <Typography variant="h5" align="center" paragraph sx={{color: '#fff'}}>
               Full-stack Developer recently graduated from The Flatiron School. 
               This site is a continuing work-in-progress as I learn and create more projects to be a small 
               representation of my capabilities. Thanks for visiting!
             </Typography>
-            <Box sx={{alignItems:'center', justifyContent:'center', display:'flex'}}>
+            {/* <Box sx={{alignItems:'center', justifyContent:'center', display:'flex'}}>
                 <CssSharpIcon sx={{fontSize:'100px'}}/>
                 <JavascriptSharpIcon sx={{fontSize:'100px'}}/>
                 <HtmlSharpIcon sx={{fontSize:'100px'}}/>
-            </Box>
+            </Box> */}
             
             <Stack
               sx={{ pt: 4 }}
@@ -67,9 +67,9 @@ const Home = () => {
           </Container>
         </Box>
 
-        <Box sx={{bgcolor: '#424242', width: '100%'}}>
-          <Typography variant='h2' sx={{color: '#ab47bc', display: 'flex', justifyContent: 'center', paddingBottom: '25px', paddingTop: '25px'}}> About Me </Typography>
-          <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingBottom: '100px', paddingTop: '25px'}}>
+        <Box sx={{bgcolor: '#ab47bc', width: '100%', paddingBottom: '50px'}}>
+          <Typography variant='h2' sx={{color: '#fff', display: 'flex', justifyContent: 'center', paddingBottom: '25px', paddingTop: '25px'}}> About Me </Typography>
+          <Container maxWidth='md' sx={{bgcolor: '#212121', paddingBottom: '50px', paddingTop:'50px'}}>
               <Typography variant='h5' sx={{color: '#fff'}}> I am a Bootcamp graduate from The Flatiron School. 
                   There, I learned the core principles and basic coding practices to best create applications that are useful 
                   and easy to use. We were taught about JS, React, HTML, CSS, Ruby, Ruby on Rails, Github, SQL, and several 
@@ -86,6 +86,7 @@ const Home = () => {
         </Box>
         
         <Box sx={{bgcolor: '#424242', width: '100%'}}>
+          <Typography component="h1" variant="h2" align="center" gutterBottom sx={{color:'#fff', paddingTop: '50px'}}> Projects </Typography>
             <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '100px', paddingBottom: '100px'}}>
                 <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '30px'}}>
                     <CardContent>
@@ -106,17 +107,9 @@ const Home = () => {
         </Box>
       </main>
       {/* Footer */}
-      <Box sx={{ bgcolor: '#424242', p: 6 }} component="footer">
+      <Box sx={{ bgcolor: '#212121', p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom sx={{color:'#ab47bc'}}>
           Logan Zimmerman: Software Engineer
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="text.secondary"
-          component="p"
-        >
-          social links
         </Typography>
         <Box sx={{alignItems:'center', justifyContent:'center', display:'flex'}}>
                 <Link href='https://www.linkedin.com/in/logan-zimmerman-developer/'> <LinkedInIcon sx={{margin: '25px', color:'#ab47bc'}} cursor='pointer'/> </Link>
