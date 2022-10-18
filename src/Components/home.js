@@ -17,6 +17,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import MainImage from './MainImage.JPG'
+import Logo from './Logo.webp'
+import { CardActionArea } from '@mui/material';
 
 const Home = () => {
 
@@ -88,20 +90,59 @@ const Home = () => {
         <Box sx={{bgcolor: '#424242', width: '100%'}}>
           <Typography component="h1" variant="h2" align="center" gutterBottom sx={{color:'#fff', paddingTop: '50px'}}> Blogs </Typography>
             <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '100px', paddingBottom: '100px'}}>
-                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '30px'}}>
+                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '350px', margin: '30px'}}>
+                  <CardActionArea href="https://dev.to/loganzimm4/a-beginners-first-look-at-usestate-kag">
+                    <CardMedia 
+                      component="img"
+                      height="140"
+                      image={Logo}
+                      alt="blog post"
+                    />
                     <CardContent>
-                        Project 1
+                      <Typography gutterBottom variant="h5" component="div"> 
+                        A beginner's first look at useState
+                      </Typography>
+                      <Typography variant="body2">
+                        A quick dive into react's useState hook in lamens terms for a beginner
+                      </Typography>
                     </CardContent>
+                  </CardActionArea>
                 </Card>
-                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '30px'}}>
-                    <CardContent>
-                        Project 2
-                    </CardContent>
+                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '350px', margin: '30px'}}>
+                  <CardActionArea href="https://dev.to/loganzimm4/active-record-associations-simplified-57lf">
+                  <CardMedia 
+                        component="img"
+                        height="140"
+                        image={Logo}
+                        alt="blog post"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div"> 
+                          Active Record Associations: Simplified
+                        </Typography>
+                        <Typography variant="body2">
+                          Broken down explanation off associations 
+                        </Typography>
+                      </CardContent>
+                  </CardActionArea>
                 </Card>
-                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '30px'}}>
-                    <CardContent>
-                        Project 3
-                    </CardContent>
+                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '350px', margin: '30px'}}>
+                  <CardActionArea href="https://dev.to/loganzimm4/a-personal-journey-with-custom-serializers-49od">
+                  <CardMedia 
+                        component="img"
+                        height="140"
+                        image={Logo}
+                        alt="blog post"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div"> 
+                          An intro to Custom Serializers to Manipulate Data Output
+                        </Typography>
+                        <Typography variant="body2">
+                          Quick lesson in how to use serializers to manipulate data
+                        </Typography>
+                      </CardContent>
+                  </CardActionArea>
                 </Card>
             </Container>
         </Box>
