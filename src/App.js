@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
-import Home from './Components/home'
+import Home from './Components/Home'
 import Contact from './Components/Contact'
 import {Route, Routes} from 'react-router-dom'
 import { createTheme, ThemeProvider} from '@mui/material'

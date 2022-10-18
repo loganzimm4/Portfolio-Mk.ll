@@ -86,7 +86,7 @@ const Home = () => {
         </Box>
         
         <Box sx={{bgcolor: '#424242', width: '100%'}}>
-          <Typography component="h1" variant="h2" align="center" gutterBottom sx={{color:'#fff', paddingTop: '50px'}}> Projects </Typography>
+          <Typography component="h1" variant="h2" align="center" gutterBottom sx={{color:'#fff', paddingTop: '50px'}}> Blogs </Typography>
             <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '100px', paddingBottom: '100px'}}>
                 <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '300px', margin: '30px'}}>
                     <CardContent>
