@@ -26,7 +26,7 @@ export default function Navbar() {
               padding: '5px'
             }}
             src={Logo} />
-          <Button href='/Contact' variant='contained' sx={{bgcolor: '#ab47bc'}}> Contact </Button>
+          <Button href='/Contact' variant='contained' color='secondary' sx={{bgcolor: '#ab47bc'}}> Contact </Button>
         </Toolbar>
       </AppBar>
     </Box>
