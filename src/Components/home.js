@@ -41,7 +41,9 @@ const Home = () => {
               height: '500px',
               width: '500px',
               justify: 'center',
-              padding: '25px'
+              padding: '25px',
+              border: '2px solid',
+              borderRadius: '20px'
             }}
             src={MainImage} />
             <Typography
