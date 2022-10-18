@@ -112,10 +112,10 @@ const Home = () => {
           Logan Zimmerman: Software Engineer
         </Typography>
         <Box sx={{alignItems:'center', justifyContent:'center', display:'flex'}}>
-                <Link href='https://www.linkedin.com/in/logan-zimmerman-developer/'> <LinkedInIcon sx={{margin: '25px', color:'#ab47bc'}} cursor='pointer'/> </Link>
-                <Link href='https://github.com/loganzimm4'><GitHubIcon sx={{margin: '25px', color:'#ab47bc'}} cursor='pointer'/></Link>
-                <Link><EmailIcon sx={{margin: '25px', color:'#ab47bc'}} cursor='pointer'/></Link>
-            </Box>
+            <Link href='https://www.linkedin.com/in/logan-zimmerman-developer/'> <LinkedInIcon sx={{margin: '25px', color:'#ab47bc'}} cursor='pointer'/> </Link>
+            <Link href='https://github.com/loganzimm4'><GitHubIcon sx={{margin: '25px', color:'#ab47bc'}} cursor='pointer'/></Link>
+            <Link href='/Contact'><EmailIcon sx={{margin: '25px', color:'#ab47bc'}} cursor='pointer'/></Link>    
+        </Box>
       </Box>
       {/* End footer */}
       </div>
