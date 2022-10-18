@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
 import Home from './Components/home'
+import Contact from './Components/Contact'
+import {Route, Routes} from 'react-router-dom'
 import { createTheme, ThemeProvider} from '@mui/material'
 
 const App = () => {
@@ -23,9 +25,12 @@ const App = () => {
 
   return (
   <>
-    <ThemeProvider theme={theme} >
-      <Navbar /> 
-      <Home />
+    <ThemeProvider theme={theme} > 
+      <Navbar />
+       <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/Contact' element={<Contact />}/>
+       </Routes>
     </ThemeProvider>
   </>
   )

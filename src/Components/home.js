@@ -16,6 +16,7 @@ import HtmlSharpIcon from '@mui/icons-material/HtmlSharp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import Logo from './Logo.webp'
 
 const Home = () => {
 
@@ -34,6 +35,15 @@ const Home = () => {
         > 
         
           <Container maxWidth="md" sx={{paddingBottom: '50px', paddingTop:'50px', bgcolor: '#212121'}}>
+            <Container 
+            component='img'
+            sx={{
+              height: '325px',
+              width: '350px',
+              justify: 'center',
+              padding: '25px'
+            }}
+            src={Logo} />
             <Typography
               component="h1"
               variant="h2"
@@ -44,26 +54,14 @@ const Home = () => {
               Logan Zimmerman
             </Typography>
             
-            <Typography variant="h5" align="center" paragraph sx={{color: '#fff'}}>
-              Full-stack Developer recently graduated from The Flatiron School. 
-              This site is a continuing work-in-progress as I learn and create more projects to be a small 
-              representation of my capabilities. Thanks for visiting!
+            <Typography variant="h4" align="center" paragraph sx={{color: '#fff'}}>
+              Full-stack Software Engineer 
             </Typography>
             {/* <Box sx={{alignItems:'center', justifyContent:'center', display:'flex'}}>
                 <CssSharpIcon sx={{fontSize:'100px'}}/>
                 <JavascriptSharpIcon sx={{fontSize:'100px'}}/>
                 <HtmlSharpIcon sx={{fontSize:'100px'}}/>
             </Box> */}
-            
-            <Stack
-              sx={{ pt: 4 }}
-              direction="row"
-              spacing={2}
-              justifyContent="center"
-            >
-              {/* <Button variant="contained" color='secondary'>About Me</Button>
-              <Button variant="contained" color='secondary'>Contact</Button> */}
-            </Stack>
           </Container>
         </Box>
 

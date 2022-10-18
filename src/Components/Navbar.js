@@ -6,6 +6,10 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import Link from '@mui/material/Link';
+import Logo from './Logo.webp'
+import Container from '@mui/material/Container';
+import SvgIcon from '@mui/material/SvgIcon';
 
 export default function Navbar() {
 
@@ -13,10 +17,16 @@ export default function Navbar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{background: '#212121'}}>
         <Toolbar>
-          <Typography variant="h3" component="div" sx={{ flexGrow: 1}}>
-            L Z 
-          </Typography>
-          <Button variant='contained' sx={{bgcolor: '#ab47bc'}}> Contact </Button>
+        <Container 
+            component='img'
+            sx={{
+              height: '80px',
+              width: '120px',
+              marginLeft: '0',
+              padding: '5px'
+            }}
+            src={Logo} />
+          <Button href='/Contact' variant='contained' sx={{bgcolor: '#ab47bc'}}> Contact </Button>
         </Toolbar>
       </AppBar>
     </Box>
