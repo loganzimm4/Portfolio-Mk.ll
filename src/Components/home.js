@@ -16,7 +16,7 @@ import HtmlSharpIcon from '@mui/icons-material/HtmlSharp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
-import Logo from './Logo.webp'
+import MainImage from './MainImage.JPG'
 
 const Home = () => {
 
@@ -38,12 +38,12 @@ const Home = () => {
             <Container 
             component='img'
             sx={{
-              height: '325px',
-              width: '350px',
+              height: '500px',
+              width: '500px',
               justify: 'center',
               padding: '25px'
             }}
-            src={Logo} />
+            src={MainImage} />
             <Typography
               component="h1"
               variant="h2"
