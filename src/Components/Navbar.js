@@ -17,14 +17,15 @@ export default function Navbar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{background: '#212121'}}>
         <Toolbar>
-        <Container 
-            component='img'
-            sx={{
-              height: '80px',
-              width: '120px',
-              marginLeft: '0',
-              padding: '5px',
-            }}
+          <Button href='/' variant='contained' color='secondary' sx={{bgcolor: '#ab47bc'}}> Home </Button>
+            <Container 
+              href='/'
+              component='img'
+              sx={{
+                height: '80px',
+                width: '120px',
+                padding: '5px',
+              }}
             src={Logo}/>
           <Button href='/Contact' variant='contained' color='secondary' sx={{bgcolor: '#ab47bc'}}> Contact </Button>
         </Toolbar>
