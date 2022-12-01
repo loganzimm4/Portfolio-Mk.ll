@@ -75,8 +75,8 @@ const Home = () => {
               <Typography variant='h5' sx={{color: '#fff'}}> I am a Bootcamp graduate from The Flatiron School. 
                   There, I learned the core principles and basic coding practices to best create applications that are useful 
                   and easy to use. We were taught about JS, React, HTML, CSS, Ruby, Ruby on Rails, Github, SQL, and several 
-                  programs to utilize these skills, like VSCode, our terminals, Postman, and obviously Google! My journey into
-                  code was a long time in the making. My grandpa was fascinated with computers from their inception and always 
+                  programs to utilize these skills, like VSCode, our terminals, Postman, and obviously Google! I am also learning Python and C++!
+                  My journey into code was a long time in the making. My grandpa was fascinated with computers from their inception and always 
                   had a curiosity for them, researching and building his own. After his passing, I began learning everything 
                   I could about them. I was very into video games, and still am, and began morphing the two hobbies into one, 
                   where I began building gaming pc's for myself and my friends almost all through high school and after learning 
