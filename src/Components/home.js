@@ -2,16 +2,11 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
-import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
-import JavascriptSharpIcon from '@mui/icons-material/JavascriptSharp';
-import CssSharpIcon from '@mui/icons-material/CssSharp';
-import HtmlSharpIcon from '@mui/icons-material/HtmlSharp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
@@ -86,6 +81,7 @@ const Home = () => {
           </Container>
         </Box>
         
+        {/*Blogs Section*/}
         <Box sx={{bgcolor: '#424242', width: '100%'}}>
           <Typography component="h1" variant="h2" align="center" gutterBottom sx={{color:'#fff', paddingTop: '50px'}}> Blogs </Typography>
             <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '100px', paddingBottom: '100px'}}>
@@ -120,7 +116,7 @@ const Home = () => {
                           Active Record Associations: Simplified
                         </Typography>
                         <Typography variant="body2">
-                          Broken down explanation off associations 
+                          Broken down explanation of associations 
                         </Typography>
                       </CardContent>
                   </CardActionArea>
@@ -145,6 +141,69 @@ const Home = () => {
                 </Card>
             </Container>
         </Box>
+        {/*End Blogs Section*/}
+
+        {/*Projects Section*/}
+        <Box sx={{bgcolor: '#ab47bc', width: '100%'}}>
+          <Typography component="h1" variant="h2" align="center" gutterBottom sx={{color:'#fff', paddingTop: '50px'}}> Projects </Typography>
+            <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '100px', paddingBottom: '100px'}}>
+                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '350px', margin: '30px'}}>
+                  <CardActionArea href="https://github.com/loganzimm4/capstone-project">
+                    <CardMedia 
+                      component="img"
+                      height="140"
+                      image={Logo}
+                      alt="Project Post"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div"> 
+                        Star Wars Academy Canvas Page
+                      </Typography>
+                      <Typography variant="body2">
+                        Canvas style pages with a Star Wars Jedi Academy theme incorporating a React.js front end with a Ruby on Rails backend
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '350px', margin: '30px'}}>
+                  <CardActionArea href="https://github.com/loganzimm4/FetchRewards-SignupPage">
+                  <CardMedia 
+                        component="img"
+                        height="140"
+                        image={Logo}
+                        alt="Project Post"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div"> 
+                          Signup Page
+                        </Typography>
+                        <Typography variant="body2">
+                          An attempt at using front end React.js with fetch to populate a dropdown menu with selections, and then accept a post request with selected options 
+                        </Typography>
+                      </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card variant='outlined' sx={{bgcolor: '#212121', color: '#fff', width: '250px', height: '350px', margin: '30px'}}>
+                  <CardActionArea href="https://github.com/codecathonors/front-end">
+                  <CardMedia 
+                        component="img"
+                        height="140"
+                        image={Logo}
+                        alt="Project Post"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div"> 
+                          Planet Exploration
+                        </Typography>
+                        <Typography variant="body2">
+                          A collaborative project working with React.js and Ruby on Rails to create an app to document new planet colonizations and populations
+                        </Typography>
+                      </CardContent>
+                  </CardActionArea>
+                </Card>
+            </Container>
+        </Box>
+        {/*End Projects Section*/}
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: '#212121', p: 6 }} component="footer">
